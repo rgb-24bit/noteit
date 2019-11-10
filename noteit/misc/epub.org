@@ -1,0 +1,26 @@
+#+TITLE:      Epub 电子书
+
+* 目录                                                    :TOC_4_gh:noexport:
+- [[#手动制作][手动制作]]
+- [[#使用工具][使用工具]]
+  - [[#pandoc][Pandoc]]
+- [[#相关问题][相关问题]]
+  - [[#mobiazw3epub-等格式电子书的区别][Mobi、Azw3、Epub 等格式电子书的区别]]
+
+* 手动制作
+  Epub 本身的格式并不是很复杂，但是，手动制作的话还是很麻烦的，简单了解下就可以了：
+  + [[https://www.ibm.com/developerworks/cn/xml/tutorials/x-epubtut/index.html][使用 EPUB 制作数字图书]]
+
+* 使用工具
+** Pandoc
+   令人惊喜的一件事情便是，我们可以通过 Pandoc 来制作 Epub 电子书，只需要写好内容，就可以一键生成了：
+   + [[https://pandoc.org/epub.html][Pandoc - Creating an ebook with pandoc]]
+   + [[https://pandoc.org/MANUAL.html#epub-metadata][Pandoc - Pandoc User’s Guide]]
+
+* 相关问题
+** Mobi、Azw3、Epub 等格式电子书的区别
+   某种程度上来说，Mobi 和 Azw3 格式的电子书更多的适用于 Kindle 平台，而 Epub 更加通用。
+
+   参考：
+   + [[https://zhuanlan.zhihu.com/p/43996780][一文教你看懂 mobi、azw3、 epub 格式电子书的区 - 知乎]]
+
