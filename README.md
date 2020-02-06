@@ -1,4 +1,5 @@
 ## Table of contents
+  + [book](#book)
   + [english](#english)
   + [health](#health)
   + [hobby](#hobby)
@@ -6,11 +7,14 @@
   + [misc](#misc)
   + [property](#property)
   + [psychology](#psychology)
+## book
+  + [思维导图](noteit/book/mindmap.org)
 ## english
   + [English](noteit/english/english.org)
 ## health
   + [八段锦](noteit/health/baduanjin.org)
   + [健康生活](noteit/health/life.org)
+  + [活动放松](noteit/health/relax.org)
 ## hobby
   + [日本麻将](noteit/hobby/mahjong.org)
 ## life
