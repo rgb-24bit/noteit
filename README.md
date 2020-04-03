@@ -3,6 +3,7 @@
   + [english](#english)
   + [health](#health)
   + [hobby](#hobby)
+  + [job](#job)
   + [life](#life)
   + [misc](#misc)
   + [property](#property)
@@ -10,13 +11,16 @@
 ## book
   + [思维导图](noteit/book/mindmap.org)
 ## english
-  + [English](noteit/english/english.org)
+  + [Grammar](noteit/english/grammar.org)
+  + [Misc](noteit/english/misc.org)
 ## health
   + [八段锦](noteit/health/baduanjin.org)
   + [健康生活](noteit/health/life.org)
   + [活动放松](noteit/health/relax.org)
 ## hobby
   + [日本麻将](noteit/hobby/mahjong.org)
+## job
+  + [Misc](noteit/job/misc.org)
 ## life
   + [生活经验](noteit/life/life.org)
 ## misc

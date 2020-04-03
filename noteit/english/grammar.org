@@ -1,0 +1,141 @@
+#+TITLE:      Grammar
+
+* 目录                                                    :TOC_4_gh:noexport:
+- [[#句子][句子]]
+  - [[#主干][主干]]
+  - [[#修饰成分][修饰成分]]
+  - [[#多个动作][多个动作]]
+  - [[#相关链接][相关链接]]
+- [[#系动词][系动词]]
+- [[#时态][时态]]
+- [[#词性][词性]]
+
+* 句子
+  英语句子由 *主干* 和 *修饰成分* 组成，其中主干为英语中的五大句型（简单句），只有一套主谓结构。
+
+** 主干
+   简单句的五种句型为：
+   + 主谓     :: 一个句子最不可或缺的两个部分，通常由一个主语和一个不及物动词组成，比如：
+     #+begin_example
+       You jump. I jump.
+     #+end_example
+   + 主谓宾   :: 宾语是主语动作的对象，比如：
+     #+begin_example
+       I love you.
+     #+end_example
+   + 主谓宾宾 :: 两个宾语存储可以通过增加相应介词的方式调换位置：
+     #+begin_example
+       Please do me a favor.
+       Please do a favor for me.
+     #+end_example
+   + 主谓宾补 :: 补充说明宾语，宾语和补语之间加一个系动词，可以构成语义通顺的句子：
+     #+begin_example
+       I found the book easy.
+       The book is easy.
+     #+end_example
+   + 主系表   :: 包含系动词，说明主语的状态特点：
+     #+begin_example
+       She is pretty.
+     #+end_example
+
+   更多的例子：
+   #+HTML: <img src="https://pic1.zhimg.com/80/v2-f544fd11d3bc358dc00fe976106a988c_1440w.jpg">
+
+** 修饰成分
+   五种基本句型，是解读英语句子和构造英语句子的基础，因为英文中各种复杂句子均是由这五种基本句型扩大，组合，省略或倒装等各种形式变化而来。
+
+   句子的修饰成分有两种：
+   + 定语：修饰限定名词
+   + 状语：修饰其他词
+
+   定语的类型包括：
+   + 形容词，比如 She is a *lovely* girl.
+   + 定语从句，由 *引导词 + 陈述句* 组成，比如 New York is the place *that he would ike to visit*.
+   + 介词短语，由 *介词 + 名词* 组成，比如 The girl *in red* is my sister.
+   + 非谓语动词，主要为 *to do, doing, done* 三类，可以变成定语从句，比如 The girl *standing* there = The girl *who is standing* there.
+
+   #+HTML: <img src="https://pic1.zhimg.com/80/v2-e135cd6cfb67a434e2b69f8c87a607cc_1440w.jpg">
+
+   状语的类型包括：
+   + 名词，比如 Come *this way*.
+   + 副词，比如 Speak *politely*.
+   + 状语从句，由 *引导词 + 陈述句* 组成，比如 I enjoyed myself *when I visited my friends in Shanghai last year*.
+   + 介词短语，由 *介词 + 名词* 组成，比如 Can you say it *in English*.
+   + 非谓语动词，比如 *Having finished the homework*, I went home.
+
+   #+HTML: <img src="https://pic1.zhimg.com/80/v2-539fec2fbef352e8012129cab949affc_1440w.jpg">
+
+** 多个动作
+   一个简单句只能有一个谓语，要表达多个动作概念，由三种方式：
+   #+HTML: <img src="https://pic3.zhimg.com/80/v2-cf8b9c4b4dfe92fc73eaaa71448d685e_1440w.jpg">
+   
+   比如：
+   + 并列连词 - There are many lovers *and* they become the strangers finally
+   + 从句 - There are many lovers *who become the strangers finally*.
+   + 非谓语动词 - There are many lovers *becoming the strangers finally*.
+
+** 相关链接
+   + [[https://www.zhihu.com/question/30030877/answer/768501967][为什么有些英语老师说语法几个小时就可以讲明白？ - 英语老师 Monica 的回答 - 知乎]]
+
+* 系动词
+  根据系动词的语义特点，系动词可以分为以下几类：
+  1. 状态系动词，用来表示主语状态，只有 be 一词。如：
+     #+begin_example
+       He was famous as a scholar.
+     #+end_example
+  2. 持续系动词，用来表示主语继续或保持一种状况或态度，主要有 ~keep, rest, remain, stay, lie, stand~ 等。如：
+     #+begin_example
+       Would you please keep silent a minute?
+     #+end_example
+  3. 表像系动词，用来表示 *看起来像* 这样的意思，主要有 ~seem, appear, look~ 等。如：
+     #+begin_example
+       He seems to be asleep. 
+     #+end_example
+  4. 感官系动词，用于表示感官的感受，主要有 ~feel, smell, sound, taste~ 等。如：
+     #+begin_example
+       The rose smells sweet. 
+     #+end_example
+  5. 变化系动词，用于表示主语变成什么样，主要有 ~become, grow, turn, fall, get, go, come, run~ 等。如：
+     #+begin_example
+       The affair becomes serious.
+     #+end_example
+  6. 终止系动词，这类系动词主要有 ~prove, turn out~ 等，用于表示证实、变成等意思，如：
+     #+begin_example
+       The article has proved most useful. 
+     #+end_example
+
+  参考：
+  + [[http://www.yygrammar.com/Article/201205/2914.html][英语系动词有哪些种类_英语语法网]]
+
+* 时态
+  时态是表示行为、动作和状态在各种时间条件下的动词形式。因此，当我们说时态结构的时候，指的是相应时态下的动词形式。
+
+  英语时态分为 16 种，如下表所示：
+  #+HTML: <img src="https://i.loli.net/2020/03/30/1NovFMLhVn9ptPd.png">
+  
+  其中，状态的定义为：
+  + *一般式* 表示 *经常发生* 的动作
+  + *进行式* 表示 *正在进行* 的动作
+  + *完成式* 表示对 *之前发生动作* 的一个 *总结*
+  + *完成进行式* 表示对 *正在进行动作* 的一个 *总结*
+
+  参考：
+  + [[https://www.zhihu.com/question/31924369/answer/196401680][如何准确使用英语时态？ - 阿丁的猫的回答 - 知乎]]
+
+* 词性
+  |--------+----------------------------------|
+  | 词性   | 相关缩写                         |
+  |--------+----------------------------------|
+  | 名词   | n.                               |
+  | 动词   | v. vi. - 不及物动词 vt. 及物动词 |
+  | 代词   | pron.                            |
+  | 形容词 | adj.                             |
+  | 副词   | adv.                             |
+  | 数词   | num.                             |
+  | 冠词   | art.                             |
+  | 介词   | prep.                            |
+  | 连词   | conj.                            |
+  | 感叹词 | interj.                          |
+  |--------+----------------------------------|
+
+  + [[https://www.hjenglish.com/cixing/yycxsx/][英语词性缩写_单词词性缩写_沪江英语]]
