@@ -13,6 +13,7 @@
 ## english
   + [Grammar](noteit/english/grammar.org)
   + [Misc](noteit/english/misc.org)
+  + [Read](noteit/english/read.org)
 ## health
   + [八段锦](noteit/health/baduanjin.org)
   + [健康生活](noteit/health/life.org)
