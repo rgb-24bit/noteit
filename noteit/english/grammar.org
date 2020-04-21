@@ -8,7 +8,7 @@
   - [[#相关链接][相关链接]]
 - [[#系动词][系动词]]
 - [[#时态][时态]]
-- [[#词性][词性]]
+- [[#词性和成分][词性和成分]]
 
 * 句子
   英语句子由 *主干* 和 *修饰成分* 组成，其中主干为英语中的五大句型（简单句），只有一套主谓结构。
@@ -122,20 +122,59 @@
   参考：
   + [[https://www.zhihu.com/question/31924369/answer/196401680][如何准确使用英语时态？ - 阿丁的猫的回答 - 知乎]]
 
-* 词性
-  |--------+----------------------------------|
-  | 词性   | 相关缩写                         |
-  |--------+----------------------------------|
-  | 名词   | n.                               |
-  | 动词   | v. vi. - 不及物动词 vt. 及物动词 |
-  | 代词   | pron.                            |
-  | 形容词 | adj.                             |
-  | 副词   | adv.                             |
-  | 数词   | num.                             |
-  | 冠词   | art.                             |
-  | 介词   | prep.                            |
-  | 连词   | conj.                            |
-  | 感叹词 | interj.                          |
-  |--------+----------------------------------|
+* 词性和成分
+  英语十大词性：
+  |--------+-----------------------+------------------------------------------------------+----------------------------|
+  | 词性   | 英语名称              | 作用                                                 | 例子                       |
+  |--------+-----------------------+------------------------------------------------------+----------------------------|
+  | 名词   | Noun(n.)              | 表示人或事物的名称                                   | student                    |
+  | 代词   | Prononu(pron.)        | 用来代替名称、形容词或数词等                         | he, that                   |
+  | 数词   | Numeral(num.)         | 表示数量或顺序                                       | one, first                 |
+  | 形容词 | Adjective(adj.)       | 用来修饰名词，表示人或事物的特性、性质               | safe, great                |
+  | 冠词   | Article(art.)         | 用在名词前，帮助说明名词所指的人或事物               | an, a, the                 |
+  | 动词   | Verb(v.)              | 表示人或事物的动作或状态                             | eat, have, run             |
+  | 副词   | Adverb(adv.)          | 用来修饰动词、形容词或其他副词，表示动作或形状的特性 | hard, head, often, quickly |
+  | 介词   | Preposition(prep.)    | 用在名词、代词等前面，说明句子中词与词之间的关系     | under, in, on              |
+  | 连词   | Conjunction(conj.)    | 用来连接词、短语或句子                               | and, but                   |
+  | 感叹词 | Interjection(interj.) | 表示说话时的感情或口气                               | hello                      |
+  |--------+-----------------------+------------------------------------------------------+----------------------------|
 
-  + [[https://www.hjenglish.com/cixing/yycxsx/][英语词性缩写_单词词性缩写_沪江英语]]
+  这十大词性可以分为：
+  + 实词：具有词汇意义和语法意义，能够单独构成成分，包括：名词、代词、数词、形容词、动词、副词
+  + 虚词：只有语法意义
+
+  英语七大成分：
+  + 主语 S - 名词、代词、非谓语
+    #+begin_quote
+    The *subject* is the part of a sentence or clause that commonly indicates (a) what is about, or (b) who or what performs the action(this is, the agent).
+    #+end_quote
+  + 谓语 V - 动词
+    #+begin_quote
+    The *predicate* is the part of a sentence (or clause) that tells us what the subject dose or is.
+    At the heart of the *predicate* is a verb.
+    #+end_quote
+  + 宾语 O - 名词、代词、非谓语
+    #+begin_quote
+    The *object* is the entity that is acted upon by the subject.
+    #+end_quote
+  + 表语 P - 形容词、名词、代词、副词、介词短语、非谓语
+    #+begin_quote
+    The *predicative* is an expression that typically follows a linking verb, e.g. be, seem, appear.
+    The main trait of all predicative expression is that they serve to expression a property that is assigned to a _subject_.
+    #+end_quote
+  + 宾语补足语 C - 形容词、非谓语
+    #+begin_quote
+    An *object complement* is a noun, a pronoun, or an adjective which follows a direct *object* to rename it or state what is has become.
+    #+end_quote
+  + 定语 - 修饰作用，形容词、名词、介词短语、非谓语
+    #+begin_quote
+    The attributive preceding the word it qualifies or modifies ans expressing an attribute.
+    #+end_quote
+  + 状语 - 动作状态，副词、介词短语、非谓语
+    #+begin_quote
+    The adverbial give more infomation about a verb.
+    #+end_quote
+
+  参考：
+  + [[https://www.bilibili.com/video/av86224665][语法学习必会基础：词性和成分-第一讲]]
+
