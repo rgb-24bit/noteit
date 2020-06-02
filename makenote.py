@@ -3,100 +3,82 @@
 import os
 import re
 
+from collections import namedtuple
 from pathlib import Path
-from typing import List, Tuple, Dict, Generator
+from typing import Union, TextIO
 
 
-EXCLUDE_DIR = 'image', 'assets', 'static'
-NOTE_FILE_SUFFIX = '.org'
+TITLE_MATCHER = re.compile(r'#\+TITLE:\s*(.+)')
+EXCLUDE_DIR_NAMES = 'image', 'assets', 'static'
+NOTE_SUFFIX = '.org'
 
 
-def make_walker(basedir: str) -> Generator[Tuple[Path, List[Path], List[Path]], None, None]:
-    """Simple directory file walker."""
-    dirpath, subdirs, subfiles = Path(basedir), [], []
-
-    # Sorted directories and files
-    for subitem in sorted(os.listdir(dirpath)):
-        curr_path = Path(dirpath, subitem)
-        if curr_path.is_dir():
-            subdirs.append(curr_path)
-        else:
-            subfiles.append(curr_path)
-
-    yield dirpath, subdirs, subfiles
-
-    for subdir in subdirs:
-        yield from make_walker(subdir.as_posix())
+Node = namedtuple('Node', ['path', 'name', 'subdirs', 'subnotes'])
+Note = namedtuple('Note', ['path', 'name'])
 
 
-def get_note_name(note):
+def get_note_name(note: Path) -> str:
     """Get the name of the note."""
     with open(note, encoding='utf-8') as fp:
-        match = re.search(r'#\+TITLE:\s*(.+)', fp.readline())
+        match = TITLE_MATCHER.search(fp.readline())
         if match:
             return match.group(1)
-    return Path(note).stem
+        return note.stem
 
 
-def walk(walker: Generator[Tuple[Path, List[Path], List[Path]], None, None]) -> List:
-    """Traverse the specified directory to get the note files in it."""
-    try:
-        dirpath, subdirs, subfiles = next(walker)
+def make_vtree(basedir: Union[str, Path]) -> Node:
+    """Building a virtual directory tree."""
+    dirpath, subdirs, subnotes = Path(basedir), [], []
 
-        notes = []
+    # Need sorted directories and files
+    for subitem in sorted(os.listdir(dirpath)):
+        curr_path = Path(dirpath, subitem)
+        if curr_path.is_dir() and curr_path.stem not in EXCLUDE_DIR_NAMES:
+            subdir = make_vtree(curr_path)
+            if len(subdir.subdirs) > 0 or len(subdir.subnotes) > 0:
+                subdirs.append(make_vtree(curr_path))
+        elif curr_path.suffix == NOTE_SUFFIX:
+            subnotes.append(Note(curr_path, get_note_name(curr_path)))
 
-        for subdir in subdirs:
-            subnotes = walk(walker)
-            if not (subdir.name in EXCLUDE_DIR or len(subnotes) == 0):
-                notes.append({subdir.name: subnotes})
-
-        for subfile in subfiles:
-            if subfile.suffix == NOTE_FILE_SUFFIX:
-                notes.append(subfile.as_posix())
-
-        return notes
-    except StopIteration:
-        pass
+    return Node(dirpath, dirpath.stem, subdirs, subnotes)
 
 
-def makecatalog(fd, notes, level=1):
-    """Generate file content directory."""
-    itemfmt = '  ' * level + '+ [{name}](#{anchor})\n'
+def makecatalog(fd: TextIO, notes: Node):
+    """Generate content catalog."""
+    fd.write('## Table of contents\n')
 
-    for subnotes in notes:
-        if not isinstance(subnotes, dict):
-            break
-        name = next(iter(subnotes))
-        fd.write(itemfmt.format(name=name, anchor=name.lower()))
+    itemfmt = '  + [{name}](#{anchor})\n'
+
+    for item in notes.subdirs:
+        fd.write(itemfmt.format(name=item.name, anchor=item.name.lower()))
 
 
-def makecontent(fd, notes, level=0):
+def makecontent(fd: TextIO, notes: Node, level: int = 0):
     """Generate file specific content."""
     headfmt = '## {name}\n'
     typefmt = '  ' * level + '+ **{name}**\n'
     itemfmt = '  ' * level + '+ [{name}]({href})\n'
 
-    for subnotes in notes:
-        if isinstance(subnotes, dict):
-            name = next(iter(subnotes))
-            if level == 0:
-                fd.write(headfmt.format(name=name))
-            else:
-                fd.write(typefmt.format(name=name))
-            makecontent(fd, subnotes[name], level + 1)
+    for subdir in notes.subdirs:
+        if level == 0:
+            fd.write(headfmt.format(name=subdir.name))
         else:
-            fd.write(itemfmt.format(name=get_note_name(subnotes), href=subnotes))
+            fd.write(typefmt.format(name=subdir.name))
+        makecontent(fd, subdir, level + 1)
+
+    for subnote in notes.subnotes:
+        fd.write(itemfmt.format(name=subnote.name,
+                                href=subnote.path.as_posix()))
 
 
-def make(fn, basedir):
+def make(fn: str, basedir: str):
     """Generate note index."""
-    notes = walk(make_walker(basedir))
+    notes = make_vtree(basedir)
 
     with open(fn, 'w', encoding='utf-8') as fd:
-        fd.write('## Table of contents\n')
         makecatalog(fd, notes)
         makecontent(fd, notes)
 
 
 if __name__ == '__main__':
-    make('README.md', 'noteit')
+    make('README.md', Path(os.path.abspath('.')).name)
