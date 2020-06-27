@@ -1,28 +1,26 @@
 ## Table of contents
   + [book](#book)
   + [english](#english)
+  + [game](#game)
   + [health](#health)
-  + [hobby](#hobby)
-  + [job](#job)
   + [life](#life)
   + [misc](#misc)
   + [property](#property)
   + [psychology](#psychology)
 ## book
-  + [思维导图](noteit/book/mindmap.org)
+  + [Book Mind Map](noteit/book/mindmap.org)
 ## english
   + [Grammar](noteit/english/grammar.org)
   + [Misc](noteit/english/misc.org)
   + [Read](noteit/english/read.org)
+## game
+  + [日本麻将](noteit/game/mahjong.org)
 ## health
   + [八段锦](noteit/health/baduanjin.org)
   + [健康生活](noteit/health/life.org)
   + [活动放松](noteit/health/relax.org)
-## hobby
-  + [日本麻将](noteit/hobby/mahjong.org)
-## job
-  + [Misc](noteit/job/misc.org)
 ## life
+  + [步入社会](noteit/life/crossroads.org)
   + [生活经验](noteit/life/life.org)
 ## misc
   + [有趣的定律](noteit/misc/concept.org)

@@ -1,8 +1,0 @@
-#+TITLE:      Misc
-
-* 目录                                                    :TOC_4_gh:noexport:
-- [[#外包公司][外包公司]]
-
-* 外包公司
-  + [[https://blog.csdn.net/xiaojin21cen/article/details/79479932][国内一些比较大型的外包公司_数据库_码工-CSDN博客]]
-
