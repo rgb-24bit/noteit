@@ -1,9 +1,0 @@
-* 英雄联盟分辨率问题
-  任务栏变宽，修改客户端分辨率和系统一样：
-  #+begin_src conf
-    ItemShopPrevResizeHeight=1600
-    ItemShopPrevResizeWidth=2560
-    Width=2560
-    Height=1600
-  #+end_src
-
