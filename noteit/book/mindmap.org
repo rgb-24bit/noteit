@@ -1,8 +1,0 @@
-#+TITLE:      Book Mind Map
-
-* 目录                                                    :TOC_4_gh:noexport:
-- [[#如何阅读一本书][如何阅读一本书]]
-
-* 如何阅读一本书
-  #+HTML: <img src="https://i.loli.net/2020/02/06/v7Z6qAjgtY5Eo1n.png">
-
