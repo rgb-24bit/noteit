@@ -1,8 +1,0 @@
-#+TITLE:      Misc
-
-* 目录                                                    :TOC_4_gh:noexport:
-- [[#资源][资源]]
-
-* 资源
-  + [[https://zhuanlan.zhihu.com/p/43705562][推荐 15 个实用的英文学习网站 - 知乎]]
-
