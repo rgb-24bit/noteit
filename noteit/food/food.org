@@ -1,4 +1,4 @@
-#+TITLE:      Food
+#+TITLE:      食谱
 
 * 目录                                                    :TOC_4_gh:noexport:
 - [[#炖][炖]]

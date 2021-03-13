@@ -1,26 +1,27 @@
 ## Table of contents
   + [book](#book)
-  + [english](#english)
-  + [game](#game)
+  + [food](#food)
   + [health](#health)
   + [life](#life)
+  + [mahjong](#mahjong)
   + [misc](#misc)
   + [property](#property)
   + [psychology](#psychology)
   + [society](#society)
 ## book
   + [2021-01-自控力](noteit/book/2021-01.org)
-## english
-  + [Grammar](noteit/english/grammar.org)
-## game
-  + [日本麻将](noteit/game/mahjong.org)
+## food
+  + [经验总结](noteit/food/exp.org)
+  + [食谱](noteit/food/food.org)
+  + [饮食安全](noteit/food/safe.org)
 ## health
   + [八段锦](noteit/health/baduanjin.org)
   + [健康生活](noteit/health/life.org)
   + [活动放松](noteit/health/relax.org)
 ## life
-  + [Food](noteit/life/food.org)
   + [生活经验](noteit/life/life.org)
+## mahjong
+  + [立直麻将](noteit/mahjong/mahjong.org)
 ## misc
   + [有趣的定律](noteit/misc/concept.org)
   + [Epub 电子书](noteit/misc/epub.org)
