@@ -10,6 +10,7 @@
   + [society](#society)
 ## book
   + [2021-01-自控力](noteit/book/2021-01.org)
+  + [2021-02-斯坦福高效睡眠法](noteit/book/2021-02.org)
 ## food
   + [经验总结](noteit/food/exp.org)
   + [食谱](noteit/food/food.org)
